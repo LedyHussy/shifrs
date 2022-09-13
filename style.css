@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xGIT1AA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserratalternates/v17/mFTiWacfw6zH4dthXcyms1lPpC8I_b0juU0xNIP1AA.ttf) format('truetype');
+}
+body {
+  padding: 40px;
+}
+.text {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text.link {
+  color: #1d181f;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.text.link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1d181f;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.text.link:hover:after {
+  width: 100%;
+}
+.input_group {
+  margin-bottom: 30px;
+}
+.input_group .input {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #D9D9D9;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+}
+.input_group .input[type='number'] {
+  height: 30px;
+}
+.input_group label {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: block;
+}
+.btn {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px;
+  display: inline-block;
+  color: #fff;
+  background-color: #B29C85;
+  padding: 10px 15px;
+  border: 2px solid #B29C85;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #B29C85;
+  border-color: #b29c85;
+}
+.res {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #D9D9D9;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+}
+.mb-0 {
+  margin-bottom: 0!important;
+}
