@@ -15,7 +15,21 @@ $('.form').click(function () {
         }
         newtext.push(alf[$newIndex]);
     })
+    $.each(alf, function (index) {
+        $finIndex = index - $sdvig;
+        if ($finIndex < 0){
+            $finIndex = $finIndex + 33
+        }
+        $el = "<p class='text'>"+ alf[$finIndex] +"</p>"
+        $(".table .finish").append($el);
+    })
 
     $('.res .text').text(newtext);
-    console.log(newtext)
 })
+
+$.each(alf, function (index) {
+    $el = "<p class='text'>"+ alf[index] +"</p>"
+    $(".table .start").append($el);
+})
+
+
