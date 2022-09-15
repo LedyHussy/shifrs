@@ -1,4 +1,4 @@
-$m = 33;
+$m = alf.length();
 
 $.each(alf, function (index,value) {
     $el = "<p class='text'>"+ value +"</p>";
