@@ -1,0 +1,388 @@
+.table_masson {
+  display: flex;
+}
+.table_masson .alf_table {
+  width: 130px;
+  flex-wrap: wrap;
+  margin-right: 60px;
+}
+.table_masson .alf_table .el {
+  width: 40px;
+  height: 40px;
+}
+.table_masson .alf_table .el .text {
+  border: none;
+  text-align: center;
+}
+.table_masson .alf_table_0 .el:nth-child(1),
+.table_masson .alf_table_1 .el:nth-child(1),
+.table_masson .alf_table_2 .el:nth-child(1),
+.table_masson .alf_table_0 .el:nth-child(2),
+.table_masson .alf_table_1 .el:nth-child(2),
+.table_masson .alf_table_2 .el:nth-child(2),
+.table_masson .alf_table_0 .el:nth-child(3),
+.table_masson .alf_table_1 .el:nth-child(3),
+.table_masson .alf_table_2 .el:nth-child(3),
+.table_masson .alf_table_0 .el:nth-child(4),
+.table_masson .alf_table_1 .el:nth-child(4),
+.table_masson .alf_table_2 .el:nth-child(4),
+.table_masson .alf_table_0 .el:nth-child(5),
+.table_masson .alf_table_1 .el:nth-child(5),
+.table_masson .alf_table_2 .el:nth-child(5),
+.table_masson .alf_table_0 .el:nth-child(6),
+.table_masson .alf_table_1 .el:nth-child(6),
+.table_masson .alf_table_2 .el:nth-child(6) {
+  border-bottom: 1px solid #000;
+}
+.table_masson .alf_table_0 .el:nth-child(1),
+.table_masson .alf_table_1 .el:nth-child(1),
+.table_masson .alf_table_2 .el:nth-child(1),
+.table_masson .alf_table_0 .el:nth-child(4),
+.table_masson .alf_table_1 .el:nth-child(4),
+.table_masson .alf_table_2 .el:nth-child(4),
+.table_masson .alf_table_0 .el:nth-child(7),
+.table_masson .alf_table_1 .el:nth-child(7),
+.table_masson .alf_table_2 .el:nth-child(7),
+.table_masson .alf_table_0 .el:nth-child(2),
+.table_masson .alf_table_1 .el:nth-child(2),
+.table_masson .alf_table_2 .el:nth-child(2),
+.table_masson .alf_table_0 .el:nth-child(5),
+.table_masson .alf_table_1 .el:nth-child(5),
+.table_masson .alf_table_2 .el:nth-child(5),
+.table_masson .alf_table_0 .el:nth-child(8),
+.table_masson .alf_table_1 .el:nth-child(8),
+.table_masson .alf_table_2 .el:nth-child(8) {
+  border-right: 1px solid #000;
+}
+.table_masson .alf_table_1 .el,
+.table_masson .alf_table_2 .el {
+  position: relative;
+}
+.table_masson .alf_table_1 .el:after,
+.table_masson .alf_table_2 .el:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+}
+.table_masson .alf_table_1 .el:nth-child(1):after,
+.table_masson .alf_table_2 .el:nth-child(1):after,
+.table_masson .alf_table_1 .el:nth-child(2):after,
+.table_masson .alf_table_2 .el:nth-child(2):after,
+.table_masson .alf_table_1 .el:nth-child(3):after,
+.table_masson .alf_table_2 .el:nth-child(3):after {
+  bottom: 0;
+}
+.table_masson .alf_table_1 .el:nth-child(4):after,
+.table_masson .alf_table_2 .el:nth-child(4):after,
+.table_masson .alf_table_1 .el:nth-child(5):after,
+.table_masson .alf_table_2 .el:nth-child(5):after,
+.table_masson .alf_table_1 .el:nth-child(6):after,
+.table_masson .alf_table_2 .el:nth-child(6):after {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.table_masson .alf_table_1 .el:nth-child(7):after,
+.table_masson .alf_table_2 .el:nth-child(7):after,
+.table_masson .alf_table_1 .el:nth-child(8):after,
+.table_masson .alf_table_2 .el:nth-child(8):after,
+.table_masson .alf_table_1 .el:nth-child(9):after,
+.table_masson .alf_table_2 .el:nth-child(9):after {
+  top: 0;
+}
+.table_masson .alf_table_1 .el:nth-child(1):after,
+.table_masson .alf_table_2 .el:nth-child(1):after,
+.table_masson .alf_table_1 .el:nth-child(4):after,
+.table_masson .alf_table_2 .el:nth-child(4):after,
+.table_masson .alf_table_1 .el:nth-child(7):after,
+.table_masson .alf_table_2 .el:nth-child(7):after {
+  right: 0;
+}
+.table_masson .alf_table_1 .el:nth-child(2):after,
+.table_masson .alf_table_2 .el:nth-child(2):after,
+.table_masson .alf_table_1 .el:nth-child(5):after,
+.table_masson .alf_table_2 .el:nth-child(5):after,
+.table_masson .alf_table_1 .el:nth-child(8):after,
+.table_masson .alf_table_2 .el:nth-child(8):after {
+  right: 50%;
+  transform: translateX(50%);
+}
+.table_masson .alf_table_2 .el:after {
+  background-color: #000;
+}
+.table_masson .alf_table_3 {
+  width: 160px;
+}
+.table_masson .alf_table_3 .el {
+  margin-right: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+}
+.table_masson .alf_table_3 .el:nth-child(2):after,
+.table_masson .alf_table_3 .el:nth-child(3):after,
+.table_masson .alf_table_3 .el:nth-child(4):after,
+.table_masson .alf_table_3 .el:nth-child(5):after,
+.table_masson .alf_table_3 .el:nth-child(6):after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+}
+.table_masson .alf_table_3 .el:nth-child(2):after {
+  width: 1px;
+  height: 100%;
+  transform: translateY(-50%) translateX(50%);
+  transform-origin: left top;
+  top: 50%;
+  right: 50%;
+}
+.table_masson .alf_table_3 .el:nth-child(3):after {
+  height: 1px;
+  width: 100%;
+  transform: translateY(-50%) translateX(50%);
+  transform-origin: left top;
+  top: 50%;
+  right: 50%;
+}
+.table_masson .alf_table_3 .el:nth-child(4):after,
+.table_masson .alf_table_3 .el:nth-child(5):after {
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform-origin: center;
+}
+.table_masson .alf_table_3 .el:nth-child(4):after {
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}
+.table_masson .alf_table_3 .el:nth-child(5):after {
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+}
+.table_masson .alf_table_3 .el:nth-child(6):after,
+.table_masson .alf_table_3 .el:nth-child(6):before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform-origin: center;
+}
+.table_masson .alf_table_3 .el:nth-child(6):after {
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}
+.table_masson .alf_table_3 .el:nth-child(6):before {
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+}
+.button_group .button_line {
+  display: flex;
+  margin-bottom: 20px;
+}
+.button_group .button_line .el {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.button_group .button_line_0 .el:nth-child(1),
+.button_group .button_line_1 .el:nth-child(1),
+.button_group .button_line_2 .el:nth-child(1),
+.button_group .button_line_0 .el:nth-child(2),
+.button_group .button_line_1 .el:nth-child(2),
+.button_group .button_line_2 .el:nth-child(2),
+.button_group .button_line_0 .el:nth-child(3),
+.button_group .button_line_1 .el:nth-child(3),
+.button_group .button_line_2 .el:nth-child(3),
+.button_group .button_line_0 .el:nth-child(4),
+.button_group .button_line_1 .el:nth-child(4),
+.button_group .button_line_2 .el:nth-child(4),
+.button_group .button_line_0 .el:nth-child(5),
+.button_group .button_line_1 .el:nth-child(5),
+.button_group .button_line_2 .el:nth-child(5),
+.button_group .button_line_0 .el:nth-child(6),
+.button_group .button_line_1 .el:nth-child(6),
+.button_group .button_line_2 .el:nth-child(6) {
+  border-bottom: 1px solid #000;
+}
+.button_group .button_line_0 .el:nth-child(4),
+.button_group .button_line_1 .el:nth-child(4),
+.button_group .button_line_2 .el:nth-child(4),
+.button_group .button_line_0 .el:nth-child(5),
+.button_group .button_line_1 .el:nth-child(5),
+.button_group .button_line_2 .el:nth-child(5),
+.button_group .button_line_0 .el:nth-child(6),
+.button_group .button_line_1 .el:nth-child(6),
+.button_group .button_line_2 .el:nth-child(6),
+.button_group .button_line_0 .el:nth-child(7),
+.button_group .button_line_1 .el:nth-child(7),
+.button_group .button_line_2 .el:nth-child(7),
+.button_group .button_line_0 .el:nth-child(8),
+.button_group .button_line_1 .el:nth-child(8),
+.button_group .button_line_2 .el:nth-child(8),
+.button_group .button_line_0 .el:nth-child(9),
+.button_group .button_line_1 .el:nth-child(9),
+.button_group .button_line_2 .el:nth-child(9) {
+  border-top: 1px solid #000;
+}
+.button_group .button_line_0 .el:nth-child(1),
+.button_group .button_line_1 .el:nth-child(1),
+.button_group .button_line_2 .el:nth-child(1),
+.button_group .button_line_0 .el:nth-child(4),
+.button_group .button_line_1 .el:nth-child(4),
+.button_group .button_line_2 .el:nth-child(4),
+.button_group .button_line_0 .el:nth-child(7),
+.button_group .button_line_1 .el:nth-child(7),
+.button_group .button_line_2 .el:nth-child(7),
+.button_group .button_line_0 .el:nth-child(2),
+.button_group .button_line_1 .el:nth-child(2),
+.button_group .button_line_2 .el:nth-child(2),
+.button_group .button_line_0 .el:nth-child(5),
+.button_group .button_line_1 .el:nth-child(5),
+.button_group .button_line_2 .el:nth-child(5),
+.button_group .button_line_0 .el:nth-child(8),
+.button_group .button_line_1 .el:nth-child(8),
+.button_group .button_line_2 .el:nth-child(8) {
+  border-right: 1px solid #000;
+}
+.button_group .button_line_0 .el:nth-child(2),
+.button_group .button_line_1 .el:nth-child(2),
+.button_group .button_line_2 .el:nth-child(2),
+.button_group .button_line_0 .el:nth-child(3),
+.button_group .button_line_1 .el:nth-child(3),
+.button_group .button_line_2 .el:nth-child(3),
+.button_group .button_line_0 .el:nth-child(5),
+.button_group .button_line_1 .el:nth-child(5),
+.button_group .button_line_2 .el:nth-child(5),
+.button_group .button_line_0 .el:nth-child(6),
+.button_group .button_line_1 .el:nth-child(6),
+.button_group .button_line_2 .el:nth-child(6),
+.button_group .button_line_0 .el:nth-child(8),
+.button_group .button_line_1 .el:nth-child(8),
+.button_group .button_line_2 .el:nth-child(8),
+.button_group .button_line_0 .el:nth-child(9),
+.button_group .button_line_1 .el:nth-child(9),
+.button_group .button_line_2 .el:nth-child(9) {
+  border-left: 1px solid #000;
+}
+.button_group .button_line_1 .el,
+.button_group .button_line_2 .el {
+  position: relative;
+}
+.button_group .button_line_1 .el:after,
+.button_group .button_line_2 .el:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+}
+.button_group .button_line_1 .el:nth-child(1):after,
+.button_group .button_line_2 .el:nth-child(1):after,
+.button_group .button_line_1 .el:nth-child(2):after,
+.button_group .button_line_2 .el:nth-child(2):after,
+.button_group .button_line_1 .el:nth-child(3):after,
+.button_group .button_line_2 .el:nth-child(3):after {
+  bottom: 0;
+}
+.button_group .button_line_1 .el:nth-child(4):after,
+.button_group .button_line_2 .el:nth-child(4):after,
+.button_group .button_line_1 .el:nth-child(5):after,
+.button_group .button_line_2 .el:nth-child(5):after,
+.button_group .button_line_1 .el:nth-child(6):after,
+.button_group .button_line_2 .el:nth-child(6):after {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.button_group .button_line_1 .el:nth-child(7):after,
+.button_group .button_line_2 .el:nth-child(7):after,
+.button_group .button_line_1 .el:nth-child(8):after,
+.button_group .button_line_2 .el:nth-child(8):after,
+.button_group .button_line_1 .el:nth-child(9):after,
+.button_group .button_line_2 .el:nth-child(9):after {
+  top: 0;
+}
+.button_group .button_line_1 .el:nth-child(1):after,
+.button_group .button_line_2 .el:nth-child(1):after,
+.button_group .button_line_1 .el:nth-child(4):after,
+.button_group .button_line_2 .el:nth-child(4):after,
+.button_group .button_line_1 .el:nth-child(7):after,
+.button_group .button_line_2 .el:nth-child(7):after {
+  right: 0;
+}
+.button_group .button_line_1 .el:nth-child(2):after,
+.button_group .button_line_2 .el:nth-child(2):after,
+.button_group .button_line_1 .el:nth-child(5):after,
+.button_group .button_line_2 .el:nth-child(5):after,
+.button_group .button_line_1 .el:nth-child(8):after,
+.button_group .button_line_2 .el:nth-child(8):after {
+  right: 50%;
+  transform: translateX(50%);
+}
+.button_group .button_line_2 .el:after {
+  background-color: #000;
+}
+.button_group .button_line_3 .el {
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+}
+.button_group .button_line_3 .el:nth-child(2):after,
+.button_group .button_line_3 .el:nth-child(3):after,
+.button_group .button_line_3 .el:nth-child(4):after,
+.button_group .button_line_3 .el:nth-child(5):after,
+.button_group .button_line_3 .el:nth-child(6):after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+}
+.button_group .button_line_3 .el:nth-child(2):after {
+  width: 1px;
+  height: 100%;
+  transform: translateY(-50%) translateX(50%);
+  transform-origin: left top;
+  top: 50%;
+  right: 50%;
+}
+.button_group .button_line_3 .el:nth-child(3):after {
+  height: 1px;
+  width: 100%;
+  transform: translateY(-50%) translateX(50%);
+  transform-origin: left top;
+  top: 50%;
+  right: 50%;
+}
+.button_group .button_line_3 .el:nth-child(4):after,
+.button_group .button_line_3 .el:nth-child(5):after {
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform-origin: center;
+}
+.button_group .button_line_3 .el:nth-child(4):after {
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}
+.button_group .button_line_3 .el:nth-child(5):after {
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+}
+.button_group .button_line_3 .el:nth-child(6):after,
+.button_group .button_line_3 .el:nth-child(6):before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform-origin: center;
+}
+.button_group .button_line_3 .el:nth-child(6):after {
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+}
+.button_group .button_line_3 .el:nth-child(6):before {
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+}

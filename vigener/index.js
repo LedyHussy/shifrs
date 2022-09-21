@@ -13,12 +13,33 @@ $('.form').click(function () {
 
     let codtext = [];
     let newtext = [];
+    $cod_index = 0
 
-    for ($i = 0; $i <= $text_lenght; $i++){
-      console.log($cod_lenght)
+    for ($i = 0; $i <= $text_lenght - 1; $i++){
+        if ($cod_index <= $cod_lenght - 1){
+            codtext.push(cod[$cod_index]);
+        }
+        else{
+            $cod_index = 0;
+            codtext.push(cod[$cod_index]);
+        }
+        $cod_index++;
     }
 
-    $('.res .text').text(newtext);
+    $.each(textarr,function (index, value) {
+        $col_num = alf.indexOf(codtext[index]);
+        $('[data-col="'+$col_num+'"]').children().each(function (indexcol) {
+            if(! $(this).hasClass('f')){
+                if ($(this).text() == value){
+                    $alf_index = indexcol - 1;
+                    $alf_ell = alf[$alf_index];
+                    newtext.push($alf_ell)
+                }
+            }
+        })
+    })
+
+    $('.res .text').text(newtext.toString());
 })
 
 $.each(alf, function (index, value) {

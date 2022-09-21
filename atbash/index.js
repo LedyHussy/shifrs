@@ -1,4 +1,4 @@
-$m = alf.length();
+$m = alf.length;
 
 $.each(alf, function (index,value) {
     $el = "<p class='text'>"+ value +"</p>";
@@ -19,10 +19,8 @@ $('.form').click(function () {
     })
     let newtext = [];
 
-    //m − n + 1
-
     $.each(textarr, function (index, value) {
-        $oldIndex = alf.indexOf(value) + 1;
+        $oldIndex = alf.indexOf(value);
         $newIndex = $m - $oldIndex;
         newtext.push(alf[$newIndex]);
     })
